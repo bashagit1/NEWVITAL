@@ -1,0 +1,58 @@
+<div class="admin-panel">
+    <h1>Welcome, Admin</h1>
+
+    <!-- Register New User -->
+    <h2>Register New User</h2>
+    <form id="registerUserForm">
+        <input type="text" id="newUsername" placeholder="New Username" required>
+        <input type="password" id="newPassword" placeholder="New Password" required>
+        <select id="newUserRole" required>
+            <option value="" disabled selected>Select Role</option>
+            <option value="admin">Admin</option>
+            <option value="staff">Staff</option>
+        </select>
+        <button type="submit">Register User</button>
+    </form>
+
+    <!-- Vital Signs Data Table -->
+    <h2>Vital Signs Data</h2>
+    <table id="vitalsTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Patient Name</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Shift</th>
+                <th>Temperature</th>
+                <th>Blood Pressure</th>
+                <th>Glucose</th>
+                <th>Pulse Rate</th>
+                <th>SpO2</th>
+                <th>Weight</th>
+                <th>Height</th>
+                <th>Notes</th>
+                <th>Recorded At</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <!-- Pagination Buttons -->
+    <div class="pagination">
+        <button id="prevPageButton">Previous Page</button>
+        <button id="nextPageButton">Next Page</button>
+    </div>
+
+    <!-- Export CSV Button -->
+    <h2>Export All Data as CSV</h2>
+    <a href="https://your-infinityfree-domain.com/backend/export-csv.php" target="_blank">
+        <button>Download CSV</button>
+    </a>
+
+    <!-- Print Monthly Report -->
+    <h2>Print Monthly Report</h2>
+    <label for="monthFilter">Select Month:</label>
+    <input type="month" id="monthFilter">
+    <button id="printButton">Print Report</button>
+</div>
