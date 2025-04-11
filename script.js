@@ -1,4 +1,4 @@
-const BASE_URL = 'https://your-infinityfree-domain.com/backend/';
+const BASE_URL = 'https://hshcc.infinityfreeapp.com/backend/';
 let currentPage = 1;
 
 // Login Functionality
